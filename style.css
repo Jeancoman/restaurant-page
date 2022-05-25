@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@font-face {
+    font-family: Journal;
+    src: url(./fonts/journal-webfont.woff);
+}
+
+body {
+    background-image: url(./img/4490229.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 20px 0px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+    column-gap: 50px;
+}
+
+ul li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+}
+
+#hero-text {
+    justify-self: center;
+    align-self: center;
+    font-family: Journal;
+    font-size: 100px;
+}
+
+h1 {
+    font-family: Italianno;
+    font-size: 78px;
+}
+
+#menu {
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#menu > .image {
+    background-image: url(./img/pizza.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100px;
+    opacity: .95;
+    margin-bottom: -5px;
+
+}
+
+#menu > .text {
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.icon-one {
+    height: 24px;
+    width: 24px;
+    background-image: url(./img/phone-plus.png);
+    background-size: cover;
+    align-self: center;
+}
+
+.icon-two {
+    background-image: url(./img/email.png);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    align-self: center;
+}
+
